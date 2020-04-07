@@ -1,0 +1,77 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>whatpeopledid4covid19</title>
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        What People Did for COVID-19
+      </h1>
+    </header>
+
+    <main>
+      <section id="statement">
+        <span class="ja">
+          <p>ここでは、新型コロナウィルス感染症(COVID-19)拡大防止のために人が何をしたのかをアーカイブします。</p>
+          <p>たくさんのひとりひとり（もちろんあなたも含めて！）がいろんなことを決断したり我慢したりしています。</p>
+          <p>何のニュースにもならなくても、誰も褒めてくれなくても、ひとりひとりが成し遂げた決断や決意を残す場所が欲しくて作りました。</p>
+          <p>あなたや、あなたの身近な人が確かに誰かの命を救っていることを、ここに記録してください。</p>
+        </span>
+        <span class="en">
+          <p>Here we archive what people did to prevent the spread of the new coronavirus infection (COVID-19).</p>
+          <p>Every single person (including you, of course!) is making a lot of decisions and putting up with a lot of things.</p>
+          <p>We created this site because we wanted a place to leave behind the decisions and resolutions that each of us made, even if they weren't newsworthy or complimented by anyone else.</p>
+          <p>Please note here that you, or someone close to you, are certainly saving someone's life.</p>
+        </span>
+      </section>
+      <section>
+        <details>
+          <summary>更新履歴(update history)</summary>
+          <p>04/07/2020: 日付のデータが反映されていなかったバグを修正。それ以前に入力されたデータはページの公開日(04/07/2020)とさせていただいた。。</p>
+          <p>04/07/2020: このページを作成</p>
+        </details>
+      </section>
+      <form>
+        <p>名前(name):
+        <input name="name" aria-label="お名前" type="text" maxlength="100">
+        </p>
+        <p>日付(date): 
+        <input name="date" aria-label="日時" type="date">
+        </p>
+        <p>内容(content): 
+        <input name="content" aria-label="内容" type="text">
+        </p>
+        <button type="submit" id="submit">送信(Submit)</button>
+      </form>
+      
+      <section class="archive">
+        <ul id="archives"></ul>
+      </section>
+      
+    </main>
+
+    <footer>
+      Made with <a href="https://glitch.com">Glitch</a>!
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
